@@ -1,0 +1,30 @@
+@use "sass:math";
+
+@import "general/mixins";
+@import "general/base";
+@import "general/null";
+@import "general/fonts";
+
+
+
+
+body {
+	font-family: CormorantUpright;
+	@include adaptiveValue("font-size", 100, 30);
+
+	span {
+		color: red;
+	}
+}
+
+
+
+// Подключение стилей общих элементов проекта
+// @import "common";
+
+// Подключение стилей отдельных блоков
+@import "header";
+@import "footer";
+
+// Подключение стилей отдельных страниц
+@import "index";
